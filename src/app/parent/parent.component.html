@@ -1,0 +1,11 @@
+<p>
+  parent works!
+</p>
+股票: <input [(ngModel)]="name"/>
+<br/>
+金额: <input [(ngModel)]="price"/>
+
+
+<app-child [name]="name" [price]="price"></app-child>
+
+<app-stock-price (lastPrice)="priceHandle($event)"></app-stock-price>
